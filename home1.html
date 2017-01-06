@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+input[type=text] {
+    width: 250px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 12px 10px 12px 20px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+    width: 50%;
+}
+</style>
+</head>
+<body>
+  <form name='form' method='post' action="All_search.php">
+  <center><input type="text" name="search" placeholder="Search.."></center>
+   <center><input type="submit" name="submit" value="submit"><br></center>
+</form>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<body style="background-color:Brown;">
+
+<head>
+<style>
+body  {
+    background-image: url("http://bestanimations.com/Earth&Space/Earth/earth2/large-earth-flyover-animated-gif-1.gif");
+    background-color: #cccccc;
+}
+
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 300px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -30px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: -30px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 3;
+}
+</style>
+</head>
+<body>
+
+
+<center><br><a href="city.php" class="button" style="vertical-align:middle"><span>city </span></button></br></a></center>
+<center><br><a href="country.php" class="button" style="vertical-align:middle"><span>country </span></button></br></a></center>
+<center><br><a href="countrylanguage.php" class="button" style="vertical-align:middle"><span>language </span></button></a></center>
+<center><br><a href="ranking.php" class="button" style="vertical-align:middle"><span>Population </span></button></a></center>
+</body>
+</html>
+
+
+<?php
+mysqli_connect('localhost','root','venkey010','world') or die('cant connect');
+
+?>

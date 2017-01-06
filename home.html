@@ -1,0 +1,35 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.button {
+    background-color: #303030;
+    border: none;
+    color: pink;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+</style>
+</head>
+<body>
+
+<center><a href="city.php" class="button">city</a></center>
+<center><a href="country.php" class="button">country</a></center>
+<center><a href="countrylanguage.php" class="button">countrylanguage</a></center>
+
+
+</body>
+</html>
+
+<?php
+mysqli_connect('localhost','root','venkey010','world') or die('cant connect');
+echo "database connected";
+?>
+
